@@ -1,11 +1,4 @@
-# PiDOH
-#DNS over HTTPS over PiHole for Raspbian
-
-# This code is taken directly from https://docs.pi-hole.net/guides/dns-over-https/
-# A few items have been modified and it has been all combined into a single script
-
-# Here we are downloading the precompiled binary and copying it to the /usr/local/bin/ directory to 
-# allow execution by the cloudflared user. Proceed to run the binary with the -v flag to check it is all working:
+# Here we are downloading the precompiled binary and copying it to the /usr/local/bin/ directory to allow execution by the cloudflared user. 
 
 wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-arm.tgz
 tar -xvzf cloudflared-stable-linux-arm.tgz
@@ -14,7 +7,6 @@ sudo chmod +x /usr/local/bin/cloudflared
 cloudflared -v
 
 # Create a cloudflared user to run the daemon
-
 sudo useradd -s /usr/sbin/nologin -r -M cloudflared
 
 # Proceed to create a configuration file for cloudflared by copying the following in to /etc/default/cloudflared. 
@@ -23,8 +15,8 @@ sudo useradd -s /usr/sbin/nologin -r -M cloudflared
 echo "# Commandline args for cloudflared
 CLOUDFLARED_OPTS=--port 5053 --upstream https://1.1.1.1/dns-query --upstream https://1.0.0.1/dns-query" | sudo tee -a /etc/default/a.txt > /dev/null
 
-# Then create the systemd script by copying the following in to /etc/systemd/system/cloudflared.service. 
-# This will control the running of the service and allow it to run on startup:
+# Create the systemd script in to /etc/systemd/system/cloudflared.service
+# This controls the running of the service and allow it to run on startup
 
 echo "[Unit]
 Description=cloudflared DNS over HTTPS proxy

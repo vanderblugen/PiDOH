@@ -60,6 +60,6 @@ sudo systemctl start cloudflared
 ```
 
 
-Update DNS to point to the pi like the image shows
+Navigate in a browser to your PiHole and update the DNS settings as follows in the image
 
 <img src=https://docs.pi-hole.net/images/DoHConfig.png>

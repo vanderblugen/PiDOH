@@ -4,9 +4,6 @@
 # This code is taken directly from https://docs.pi-hole.net/guides/dns-over-https/
 # A few items have been modified and it has been all combined into a single script
 
-
-
-
 # Here we are downloading the precompiled binary and copying it to the /usr/local/bin/ directory to 
 # allow execution by the cloudflared user. Proceed to run the binary with the -v flag to check it is all working:
 
@@ -49,4 +46,3 @@ WantedBy=multi-user.target" | sudo tee -a /etc/systemd/system/alpha > /dev/null
 
 sudo systemctl enable cloudflared
 sudo systemctl start cloudflared
-

@@ -5,7 +5,7 @@ This has been pulled from https://docs.pi-hole.net/guides/dns-over-https/ and mo
 
 Before running the script it's recommended to run `sudo -v` may be needed to run to cache the password, depending on how your Pi is setup.
 
-If you just want the script, it's at https://github.com/vanderblugen/PiDOH/blob/master/main.sh
+If you just want the script, it's at https://github.com/vanderblugen/PiDOH/blob/master/main.sh and you still have to update the PiHole per the image below.
 
 
 ### This is the jist of the script
@@ -60,6 +60,6 @@ sudo systemctl start cloudflared
 ```
 
 
-Navigate in a browser to your PiHole and update the DNS settings as follows in the image
+## Navigate a browser to the PiHole and update the DNS settings per the image
 
 <img src=https://docs.pi-hole.net/images/DoHConfig.png>

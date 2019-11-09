@@ -5,8 +5,11 @@ This has been pulled from https://docs.pi-hole.net/guides/dns-over-https/ and mo
 
 Before running the script it's recommended to run `sudo -v` may be needed to run to cache the password, depending on how your Pi is setup.
 
-If you just want the script, it's at https://github.com/vanderblugen/PiDOH/blob/master/main.sh and you still have to update the PiHole per the image below.
+## Just give me the script
 
+https://github.com/vanderblugen/PiDOH/blob/master/main.sh 
+
+You still have to update the PiHole per the image below.
 
 ## This is the jist of the script
 

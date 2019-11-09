@@ -7,9 +7,7 @@ Before running the script it's recommended to run `sudo -v` may be needed to run
 
 Run https://github.com/vanderblugen/PiDOH/blob/master/main.sh
 
-Update DNS to point to the pi like the image shows
 
-<img src=https://docs.pi-hole.net/images/DoHConfig.png>
 
  Here we are downloading the precompiled binary and copying it to the /usr/local/bin/ directory to allow execution by the cloudflared user. 
 
@@ -45,7 +43,14 @@ KillMode=process
 [Install]
 WantedBy=multi-user.target" | sudo tee -a /etc/systemd/system/alpha > /dev/null
 
-# Enable the systemd service to run on startup
+## Enable the systemd service to run on startup
 
+```bash
 sudo systemctl enable cloudflared
 sudo systemctl start cloudflared
+```
+
+
+Update DNS to point to the pi like the image shows
+
+<img src=https://docs.pi-hole.net/images/DoHConfig.png>

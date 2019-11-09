@@ -8,7 +8,7 @@ Before running the script it's recommended to run `sudo -v` may be needed to run
 If you just want the script, it's at https://github.com/vanderblugen/PiDOH/blob/master/main.sh and you still have to update the PiHole per the image below.
 
 
-### This is the jist of the script
+## This is the jist of the script
 
 Here we are downloading the precompiled binary and copying it to the /usr/local/bin/ directory to allow execution by the cloudflared user. 
 

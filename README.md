@@ -1,7 +1,7 @@
 # PiDOH
 DNS over HTTPS over PiHole for Raspbian.  This is for a https://github.com/pi-hole @pi-hole
 
-This has been pulled from https://docs.pi-hole.net/guides/dns-over-https/ and modified so that it can be run as a single script.
+This has been pulled from [https://docs.pi-hole.net/guides/dns-over-https/](https://docs.pi-hole.net/guides/dns-over-https/) and modified so that it can be run as a single script.
 
 Before running the script it's recommended to run `sudo -v` may be needed to run to cache the password, depending on how your Pi is setup.
 

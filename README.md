@@ -61,3 +61,6 @@ sudo systemctl start cloudflared
 
 ## Navigate a browser to the PiHole and update the DNS settings per the image
 ![DNS Settings](https://docs.pi-hole.net/images/DoHConfig.png)
+
+
+## If anyone wants to contribute please reach out
